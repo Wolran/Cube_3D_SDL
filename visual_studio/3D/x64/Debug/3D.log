@@ -1,0 +1,47 @@
+﻿  console_engine.c
+C:\Users\Adraster\source\repos\3D\3D\console_engine.c(73,52): warning C4244: 'fonction' : conversion de 'double' en 'float', perte possible de données
+C:\Users\Adraster\source\repos\3D\3D\console_engine.c(259,28): warning C4018: '<' : incompatibilité signed/unsigned
+C:\Users\Adraster\source\repos\3D\3D\console_engine.c(288,85): warning C4244: 'fonction' : conversion de 'float' en 'uint8_t', perte possible de données
+C:\Users\Adraster\source\repos\3D\3D\console_engine.c(288,88): warning C4244: 'fonction' : conversion de 'float' en 'uint8_t', perte possible de données
+C:\Users\Adraster\source\repos\3D\3D\console_engine.c(288,91): warning C4244: 'fonction' : conversion de 'float' en 'uint8_t', perte possible de données
+C:\Users\Adraster\source\repos\3D\3D\console_engine.c(302,19): warning C4244: '=' : conversion de 'double' en 'int', perte possible de données
+C:\Users\Adraster\source\repos\3D\3D\console_engine.c(303,19): warning C4244: '=' : conversion de 'double' en 'int', perte possible de données
+C:\Users\Adraster\source\repos\3D\3D\console_engine.c(414,41): warning C4244: 'fonction' : conversion de 'float' en 'int', perte possible de données
+C:\Users\Adraster\source\repos\3D\3D\console_engine.c(414,45): warning C4244: 'fonction' : conversion de 'float' en 'int', perte possible de données
+C:\Users\Adraster\source\repos\3D\3D\console_engine.c(411,1): warning C4244: 'initialisation' : conversion de 'double' en 'float', perte possible de données
+C:\Users\Adraster\source\repos\3D\3D\console_engine.c(412,1): warning C4244: 'initialisation' : conversion de 'double' en 'float', perte possible de données
+C:\Users\Adraster\source\repos\3D\3D\console_engine.c(441,20): warning C4244: '=' : conversion de 'float' en 'uint8_t', perte possible de données
+C:\Users\Adraster\source\repos\3D\3D\console_engine.c(442,20): warning C4244: '=' : conversion de 'float' en 'uint8_t', perte possible de données
+C:\Users\Adraster\source\repos\3D\3D\console_engine.c(443,20): warning C4244: '=' : conversion de 'float' en 'uint8_t', perte possible de données
+C:\Users\Adraster\source\repos\3D\3D\console_engine.c(444,20): warning C4244: '=' : conversion de 'float' en 'uint8_t', perte possible de données
+C:\Users\Adraster\source\repos\3D\3D\console_engine.c(511,32): warning C4018: '<' : incompatibilité signed/unsigned
+  main.c
+C:\Users\Adraster\source\repos\3D\3D\main.c(56,20): warning C4244: '=' : conversion de 'double' en 'float', perte possible de données
+C:\Users\Adraster\source\repos\3D\3D\main.c(57,20): warning C4244: '=' : conversion de 'double' en 'float', perte possible de données
+C:\Users\Adraster\source\repos\3D\3D\main.c(107,35): warning C4244: '=' : conversion de 'double' en 'float', perte possible de données
+C:\Users\Adraster\source\repos\3D\3D\main.c(111,26): warning C4244: 'fonction' : conversion de 'float' en 'int', perte possible de données
+C:\Users\Adraster\source\repos\3D\3D\main.c(111,30): warning C4244: 'fonction' : conversion de 'float' en 'int', perte possible de données
+C:\Users\Adraster\source\repos\3D\3D\main.c(111,49): warning C4244: 'fonction' : conversion de 'float' en 'int', perte possible de données
+C:\Users\Adraster\source\repos\3D\3D\main.c(111,53): warning C4244: 'fonction' : conversion de 'float' en 'int', perte possible de données
+C:\Users\Adraster\source\repos\3D\3D\main.c(136,53): warning C4244: 'fonction' : conversion de 'float' en 'int', perte possible de données
+C:\Users\Adraster\source\repos\3D\3D\main.c(138,53): warning C4244: 'fonction' : conversion de 'float' en 'int', perte possible de données
+C:\Users\Adraster\source\repos\3D\3D\main.c(144,33): warning C4244: 'fonction' : conversion de 'float' en 'int', perte possible de données
+C:\Users\Adraster\source\repos\3D\3D\main.c(144,46): warning C4244: 'fonction' : conversion de 'float' en 'int', perte possible de données
+C:\Users\Adraster\source\repos\3D\3D\main.c(144,54): warning C4244: 'fonction' : conversion de 'float' en 'int', perte possible de données
+C:\Users\Adraster\source\repos\3D\3D\main.c(144,62): warning C4244: 'fonction' : conversion de 'float' en 'int', perte possible de données
+C:\Users\Adraster\source\repos\3D\3D\main.c(148,33): warning C4244: 'fonction' : conversion de 'float' en 'int', perte possible de données
+C:\Users\Adraster\source\repos\3D\3D\main.c(148,50): warning C4244: 'fonction' : conversion de 'float' en 'int', perte possible de données
+C:\Users\Adraster\source\repos\3D\3D\main.c(153,25): warning C4244: 'fonction' : conversion de 'float' en 'int', perte possible de données
+C:\Users\Adraster\source\repos\3D\3D\main.c(153,38): warning C4244: 'fonction' : conversion de 'float' en 'int', perte possible de données
+C:\Users\Adraster\source\repos\3D\3D\main.c(87,1): warning C4305: 'initialisation' : troncation de 'double' à 'float'
+C:\Users\Adraster\source\repos\3D\3D\main.c(90,1): warning C4244: 'initialisation' : conversion de 'double' en 'float', perte possible de données
+C:\Users\Adraster\source\repos\3D\3D\main.c(92,1): warning C4244: 'initialisation' : conversion de 'double' en 'float', perte possible de données
+C:\Users\Adraster\source\repos\3D\3D\main.c(100,1): warning C4244: 'initialisation' : conversion de 'double' en 'float', perte possible de données
+C:\Users\Adraster\source\repos\3D\3D\main.c(102,1): warning C4244: 'initialisation' : conversion de 'double' en 'float', perte possible de données
+C:\Users\Adraster\source\repos\3D\3D\main.c(103,1): warning C4244: 'initialisation' : conversion de 'double' en 'float', perte possible de données
+C:\Users\Adraster\source\repos\3D\3D\main.c(117,1): warning C4244: 'initialisation' : conversion de 'double' en 'float', perte possible de données
+C:\Users\Adraster\source\repos\3D\3D\main.c(130,1): warning C4244: 'initialisation' : conversion de 'float' en 'int', perte possible de données
+C:\Users\Adraster\source\repos\3D\3D\main.c(132,1): warning C4244: 'initialisation' : conversion de 'float' en 'int', perte possible de données
+C:\Users\Adraster\source\repos\3D\3D\main.c(171,15): warning C4013: 'time' non défini(e) ; extern retournant int pris par défaut
+  Génération de code en cours...
+  3D.vcxproj -> C:\Users\Adraster\source\repos\3D\x64\Debug\3D.exe
