@@ -1,6 +1,6 @@
 ﻿#include "console_engine.h"
 
-//### GameEngine ###
+///### GameEngine ###
 int createGameEngine(GameEngine *ge, char *title,uint16_t win_size_x, uint16_t win_size_y, uint8_t pix_size_x, uint8_t pix_size_y)
 {
     ge->winWidth    = win_size_x;
@@ -67,7 +67,7 @@ int startGameEngine(GameEngine *ge)
     {
         startTime = SDL_GetTicks();
 
-        is_running &= processEvents(ge);
+        is_running &= processEvents(ge, &startTime);
         is_running &= processKeyboard(ge);
         is_running &= processMouse(ge);
         is_running &= onGameUpdate(ge, elapsed_time);
@@ -104,7 +104,7 @@ int updateGraph(GameEngine *ge)
     return !flag;
 }
 
-int processEvents(GameEngine *ge)
+int processEvents(GameEngine *ge, uint32_t *startTime)
 {   
     SDL_Event event;
     while (SDL_PollEvent(&event))
@@ -116,6 +116,10 @@ int processEvents(GameEngine *ge)
                 {
                     return 0;
                 }
+				if (event.window.event == SDL_WINDOWEVENT_MOVED)
+				{
+					*startTime = SDL_GetTicks();
+				}
             break;
         }
     }
@@ -155,7 +159,7 @@ int processMouse(GameEngine *ge)
     uint32_t new_keys = SDL_GetMouseState(&ge->mouseX, &ge->mouseY);
     ge->mouseX /= ge->pixWidth;
     ge->mouseY /= ge->pixHeight;
-                
+
     for (uint16_t i = 0; i < 5; i++)
 	{
 		ge->mouse[i].pressed = 0;
@@ -260,37 +264,34 @@ void Clear(GameEngine *ge, Color col)
         ge->selected_sprite->data[i] = col;
 }
 
-void Draw(GameEngine *ge, int x, int y, Color col)
+void Draw(GameEngine* ge, int x, int y, Color col)
 {
     if (ge->selected_sprite == NULL) return;
 
-    if (x >= 0 && y >= 0 && x < ge->selected_sprite->size_x && y < ge->selected_sprite->size_y)
+    if (ge->draw_mode == M_NORMAL)
     {
-        if (ge->draw_mode == M_NORMAL)
-        {
-            ge->selected_sprite->data[x + y * ge->selected_sprite->size_x] = col;
-        }
-        else if (ge->draw_mode == M_MASK)
-        {
-            if (col.a == 255)
-                ge->selected_sprite->data[x + y * ge->selected_sprite->size_x] = col;
-        }
-        else if (ge->draw_mode == M_ALPHA)
-        {
-            Color pix = ge->selected_sprite->data[x + y * ge->selected_sprite->size_x];
+        setPixel(ge->selected_sprite, x, y, col);
+    }
+    else if (ge->draw_mode == M_MASK)
+    {
+        if (col.a == 255)
+            setPixel(ge->selected_sprite, x, y, col);
+    }
+    else if (ge->draw_mode == M_ALPHA)
+    {
+        Color pix = getPixel(ge->selected_sprite, x, y);
 
-            float a = (float)(col.a / 255.0f) * 1.0f;//fBlendFactor;
-            float c = 1.0f - a;
-            float r = a * (float)col.r + c * (float)pix.r;
-            float g = a * (float)col.g + c * (float)pix.g;
-            float b = a * (float)col.b + c * (float)pix.b;
+        float a = (float)(col.a / 255.0f) * 1.0f;//fBlendFactor;
+        float c = 1.0f - a;
+        float r = a * (float)col.r + c * (float)pix.r;
+        float g = a * (float)col.g + c * (float)pix.g;
+        float b = a * (float)col.b + c * (float)pix.b;
 
-            ge->selected_sprite->data[x + y * ge->selected_sprite->size_x] = color(r, g, b, 255);
-        }
-        else if (ge->draw_mode == M_CUSTOM)
-        {
-          (*ge->custom_draw_mode)(ge, x, y, col);
-        }
+        setPixel(ge->selected_sprite, x, y, color(r, g, b, 255));
+    }
+    else if (ge->draw_mode == M_CUSTOM)
+    {
+        (*ge->custom_draw_mode)(ge, x, y, col);
     }
 }
 
@@ -411,13 +412,56 @@ void drawRotateSprite(GameEngine* ge, Sprite* spr, float cx, float cy, float ang
             float ex = cx + cos(-angle) * dx + sin(-angle) * dy;
             float ey = cy - sin(-angle) * dx + cos(-angle) * dy;
 
-            Color col = getPixel(spr, ex, ey);
+            if (ex >= 0 && ex < spr->size_x && ey >= 0 && ey < spr->size_y)
+            {
+                Color col = getPixel(spr, ex, ey);
+                Draw(ge, x + dx, y + dy, col);
+            }
+        }
+    }
+}
+
+void drawPartialSprite(GameEngine* ge, Sprite* spr, uint16_t sx, uint16_t sy, uint16_t ex, uint16_t ey, int x, int y, uint8_t size)
+{
+    if (spr->data == NULL)
+        return;
+
+    for (int dy = 0; dy < ey; dy++)
+    {
+        for (int dx = 0; dx < ex; dx++)
+        {
+            Color col = getPixel(spr, sx + dx, sy + dy);
             Draw(ge, x + dx, y + dy, col);
         }
     }
 }
 
-//### Color ###
+void drawPartialRotatedSprite(GameEngine* ge, Sprite* spr, float cx, float cy, uint16_t sx, uint16_t sy, uint16_t ex, uint16_t ey, float angle, int x, int y, uint8_t size)
+{
+    if (spr->data == NULL)
+        return;
+
+    //NEED TO ADD A WAY TO CALCULATE THE MINIMUM SPACE NEEDED
+
+    for (int dy = -spr->size_y; dy < spr->size_y; dy++)
+    {
+        for (int dx = -spr->size_x; dx < spr->size_x; dx++)
+        {
+            float hx = (cx + sx) + cos(-angle) * dx + sin(-angle) * dy;
+            float hy = (cy + sy) - sin(-angle) * dx + cos(-angle) * dy;
+
+            if (hx >= sx && hx < sx + ex && hy >= sy && hy < sy + ey)
+            {
+                Color col = getPixel(spr, hx, hy);
+                Draw(ge, x + dx, y + dy, col);
+            }
+        }
+    }
+}
+
+
+
+///### Color ###
 Color color(uint8_t r, uint8_t g, uint8_t b, uint8_t a)
 {
     Color col;
@@ -445,7 +489,7 @@ Color colorF(float r, float g, float b, float a)
     return col;
 }
 
-//### Vector ###
+///### Vector ###
 Vec2 add_v2(Vec2 a, Vec2 b)
 {
     return (Vec2) { a.x + b.x, a.y + b.y};
@@ -483,7 +527,7 @@ Vec2 rot_v2(Vec2 a, float r)
     return (Vec2) { cosf(r)* a.x + sinf(r) * a.y, -sinf(r) * a.x + cosf(r) * a.y };
 }
 
-//### Sprite ###
+///### Sprite ###
 Sprite* sprite(uint16_t x, uint16_t y)
 {
     Sprite *spr = (Sprite*)malloc(sizeof(Sprite));

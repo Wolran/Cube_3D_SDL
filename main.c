@@ -1,3 +1,4 @@
+#define SDL_MAIN_HANDLED
 #include "console_engine.h"
 
 Sprite* tex;
@@ -145,10 +146,8 @@ int onGameUpdate(GameEngine* ge, float elapsed_time)
             }
             Draw(ge, x, y, col);
         }
-
-
+		
         drawLine(ge, playerx * 5, playery * 5, x3 * 5, y3 * 5, colorD(0x00ff00ff));
-
     }
 
     drawRect(ge, playerx * 5 - 4, playery * 5 - 4, 8, 8, colorD(0x00ff00ff));
@@ -164,7 +163,6 @@ int onGameUpdate(GameEngine* ge, float elapsed_time)
         }
 
     }
-
     return 1;
 }
 
