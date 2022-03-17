@@ -1,4 +1,4 @@
-# Cube_3D_SDL_v0.1
+# Cube_3D_SDL
 
 instal sdl.
 
