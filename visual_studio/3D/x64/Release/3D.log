@@ -1,47 +1,47 @@
 ﻿  main.c
-C:\Users\Adraster\Desktop\3D_SDL\visual_studio\3D\main.c(58,20): warning C4244: '=' : conversion de 'double' en 'float', perte possible de données
-C:\Users\Adraster\Desktop\3D_SDL\visual_studio\3D\main.c(59,20): warning C4244: '=' : conversion de 'double' en 'float', perte possible de données
-C:\Users\Adraster\Desktop\3D_SDL\visual_studio\3D\main.c(109,35): warning C4244: '=' : conversion de 'double' en 'float', perte possible de données
-C:\Users\Adraster\Desktop\3D_SDL\visual_studio\3D\main.c(142,57): warning C4244: 'fonction' : conversion de 'float' en 'int', perte possible de données
-C:\Users\Adraster\Desktop\3D_SDL\visual_studio\3D\main.c(144,57): warning C4244: 'fonction' : conversion de 'float' en 'int', perte possible de données
-C:\Users\Adraster\Desktop\3D_SDL\visual_studio\3D\main.c(150,33): warning C4244: 'fonction' : conversion de 'float' en 'int', perte possible de données
-C:\Users\Adraster\Desktop\3D_SDL\visual_studio\3D\main.c(150,46): warning C4244: 'fonction' : conversion de 'float' en 'int', perte possible de données
-C:\Users\Adraster\Desktop\3D_SDL\visual_studio\3D\main.c(150,54): warning C4244: 'fonction' : conversion de 'float' en 'int', perte possible de données
-C:\Users\Adraster\Desktop\3D_SDL\visual_studio\3D\main.c(150,62): warning C4244: 'fonction' : conversion de 'float' en 'int', perte possible de données
-C:\Users\Adraster\Desktop\3D_SDL\visual_studio\3D\main.c(154,33): warning C4244: 'fonction' : conversion de 'float' en 'int', perte possible de données
-C:\Users\Adraster\Desktop\3D_SDL\visual_studio\3D\main.c(154,50): warning C4244: 'fonction' : conversion de 'float' en 'int', perte possible de données
-C:\Users\Adraster\Desktop\3D_SDL\visual_studio\3D\main.c(159,25): warning C4244: 'fonction' : conversion de 'float' en 'int', perte possible de données
-C:\Users\Adraster\Desktop\3D_SDL\visual_studio\3D\main.c(159,38): warning C4244: 'fonction' : conversion de 'float' en 'int', perte possible de données
-C:\Users\Adraster\Desktop\3D_SDL\visual_studio\3D\main.c(89,1): warning C4305: 'initialisation' : troncation de 'double' à 'float'
-C:\Users\Adraster\Desktop\3D_SDL\visual_studio\3D\main.c(92,1): warning C4244: 'initialisation' : conversion de 'double' en 'float', perte possible de données
-C:\Users\Adraster\Desktop\3D_SDL\visual_studio\3D\main.c(94,1): warning C4244: 'initialisation' : conversion de 'double' en 'float', perte possible de données
-C:\Users\Adraster\Desktop\3D_SDL\visual_studio\3D\main.c(102,1): warning C4244: 'initialisation' : conversion de 'double' en 'float', perte possible de données
-C:\Users\Adraster\Desktop\3D_SDL\visual_studio\3D\main.c(104,1): warning C4244: 'initialisation' : conversion de 'double' en 'float', perte possible de données
-C:\Users\Adraster\Desktop\3D_SDL\visual_studio\3D\main.c(105,1): warning C4244: 'initialisation' : conversion de 'double' en 'float', perte possible de données
-C:\Users\Adraster\Desktop\3D_SDL\visual_studio\3D\main.c(119,1): warning C4244: 'initialisation' : conversion de 'double' en 'float', perte possible de données
-C:\Users\Adraster\Desktop\3D_SDL\visual_studio\3D\main.c(134,1): warning C4244: 'initialisation' : conversion de 'float' en 'int', perte possible de données
-C:\Users\Adraster\Desktop\3D_SDL\visual_studio\3D\main.c(136,1): warning C4244: 'initialisation' : conversion de 'float' en 'int', perte possible de données
-C:\Users\Adraster\Desktop\3D_SDL\visual_studio\3D\main.c(177,15): warning C4013: 'time' non défini(e) ; extern retournant int pris par défaut
+D:\Documents\Projets\autres\Cube_3D_SDL\visual_studio\3D\main.c(58,20): warning C4244: '=' : conversion de 'double' en 'float', perte possible de données
+D:\Documents\Projets\autres\Cube_3D_SDL\visual_studio\3D\main.c(59,20): warning C4244: '=' : conversion de 'double' en 'float', perte possible de données
+D:\Documents\Projets\autres\Cube_3D_SDL\visual_studio\3D\main.c(109,35): warning C4244: '=' : conversion de 'double' en 'float', perte possible de données
+D:\Documents\Projets\autres\Cube_3D_SDL\visual_studio\3D\main.c(142,57): warning C4244: 'fonction' : conversion de 'float' en 'int', perte possible de données
+D:\Documents\Projets\autres\Cube_3D_SDL\visual_studio\3D\main.c(144,57): warning C4244: 'fonction' : conversion de 'float' en 'int', perte possible de données
+D:\Documents\Projets\autres\Cube_3D_SDL\visual_studio\3D\main.c(150,33): warning C4244: 'fonction' : conversion de 'float' en 'int', perte possible de données
+D:\Documents\Projets\autres\Cube_3D_SDL\visual_studio\3D\main.c(150,46): warning C4244: 'fonction' : conversion de 'float' en 'int', perte possible de données
+D:\Documents\Projets\autres\Cube_3D_SDL\visual_studio\3D\main.c(150,54): warning C4244: 'fonction' : conversion de 'float' en 'int', perte possible de données
+D:\Documents\Projets\autres\Cube_3D_SDL\visual_studio\3D\main.c(150,62): warning C4244: 'fonction' : conversion de 'float' en 'int', perte possible de données
+D:\Documents\Projets\autres\Cube_3D_SDL\visual_studio\3D\main.c(154,33): warning C4244: 'fonction' : conversion de 'float' en 'int', perte possible de données
+D:\Documents\Projets\autres\Cube_3D_SDL\visual_studio\3D\main.c(154,50): warning C4244: 'fonction' : conversion de 'float' en 'int', perte possible de données
+D:\Documents\Projets\autres\Cube_3D_SDL\visual_studio\3D\main.c(159,25): warning C4244: 'fonction' : conversion de 'float' en 'int', perte possible de données
+D:\Documents\Projets\autres\Cube_3D_SDL\visual_studio\3D\main.c(159,38): warning C4244: 'fonction' : conversion de 'float' en 'int', perte possible de données
+D:\Documents\Projets\autres\Cube_3D_SDL\visual_studio\3D\main.c(89,1): warning C4305: 'initialisation' : troncation de 'double' à 'float'
+D:\Documents\Projets\autres\Cube_3D_SDL\visual_studio\3D\main.c(92,1): warning C4244: 'initialisation' : conversion de 'double' en 'float', perte possible de données
+D:\Documents\Projets\autres\Cube_3D_SDL\visual_studio\3D\main.c(94,1): warning C4244: 'initialisation' : conversion de 'double' en 'float', perte possible de données
+D:\Documents\Projets\autres\Cube_3D_SDL\visual_studio\3D\main.c(102,1): warning C4244: 'initialisation' : conversion de 'double' en 'float', perte possible de données
+D:\Documents\Projets\autres\Cube_3D_SDL\visual_studio\3D\main.c(104,1): warning C4244: 'initialisation' : conversion de 'double' en 'float', perte possible de données
+D:\Documents\Projets\autres\Cube_3D_SDL\visual_studio\3D\main.c(105,1): warning C4244: 'initialisation' : conversion de 'double' en 'float', perte possible de données
+D:\Documents\Projets\autres\Cube_3D_SDL\visual_studio\3D\main.c(119,1): warning C4244: 'initialisation' : conversion de 'double' en 'float', perte possible de données
+D:\Documents\Projets\autres\Cube_3D_SDL\visual_studio\3D\main.c(134,1): warning C4244: 'initialisation' : conversion de 'float' en 'int', perte possible de données
+D:\Documents\Projets\autres\Cube_3D_SDL\visual_studio\3D\main.c(136,1): warning C4244: 'initialisation' : conversion de 'float' en 'int', perte possible de données
+D:\Documents\Projets\autres\Cube_3D_SDL\visual_studio\3D\main.c(177,15): warning C4013: 'time' non défini(e) ; extern retournant int pris par défaut
   console_engine.c
-C:\Users\Adraster\Desktop\3D_SDL\visual_studio\3D\console_engine.c(73,52): warning C4244: 'fonction' : conversion de 'double' en 'float', perte possible de données
-C:\Users\Adraster\Desktop\3D_SDL\visual_studio\3D\console_engine.c(259,28): warning C4018: '<' : incompatibilité signed/unsigned
-C:\Users\Adraster\Desktop\3D_SDL\visual_studio\3D\console_engine.c(288,85): warning C4244: 'fonction' : conversion de 'float' en 'uint8_t', perte possible de données
-C:\Users\Adraster\Desktop\3D_SDL\visual_studio\3D\console_engine.c(288,88): warning C4244: 'fonction' : conversion de 'float' en 'uint8_t', perte possible de données
-C:\Users\Adraster\Desktop\3D_SDL\visual_studio\3D\console_engine.c(288,91): warning C4244: 'fonction' : conversion de 'float' en 'uint8_t', perte possible de données
-C:\Users\Adraster\Desktop\3D_SDL\visual_studio\3D\console_engine.c(302,19): warning C4244: '=' : conversion de 'double' en 'int', perte possible de données
-C:\Users\Adraster\Desktop\3D_SDL\visual_studio\3D\console_engine.c(303,19): warning C4244: '=' : conversion de 'double' en 'int', perte possible de données
-C:\Users\Adraster\Desktop\3D_SDL\visual_studio\3D\console_engine.c(414,41): warning C4244: 'fonction' : conversion de 'float' en 'int', perte possible de données
-C:\Users\Adraster\Desktop\3D_SDL\visual_studio\3D\console_engine.c(414,45): warning C4244: 'fonction' : conversion de 'float' en 'int', perte possible de données
-C:\Users\Adraster\Desktop\3D_SDL\visual_studio\3D\console_engine.c(411,1): warning C4244: 'initialisation' : conversion de 'double' en 'float', perte possible de données
-C:\Users\Adraster\Desktop\3D_SDL\visual_studio\3D\console_engine.c(412,1): warning C4244: 'initialisation' : conversion de 'double' en 'float', perte possible de données
-C:\Users\Adraster\Desktop\3D_SDL\visual_studio\3D\console_engine.c(441,20): warning C4244: '=' : conversion de 'float' en 'uint8_t', perte possible de données
-C:\Users\Adraster\Desktop\3D_SDL\visual_studio\3D\console_engine.c(442,20): warning C4244: '=' : conversion de 'float' en 'uint8_t', perte possible de données
-C:\Users\Adraster\Desktop\3D_SDL\visual_studio\3D\console_engine.c(443,20): warning C4244: '=' : conversion de 'float' en 'uint8_t', perte possible de données
-C:\Users\Adraster\Desktop\3D_SDL\visual_studio\3D\console_engine.c(444,20): warning C4244: '=' : conversion de 'float' en 'uint8_t', perte possible de données
-C:\Users\Adraster\Desktop\3D_SDL\visual_studio\3D\console_engine.c(511,32): warning C4018: '<' : incompatibilité signed/unsigned
+D:\Documents\Projets\autres\Cube_3D_SDL\visual_studio\3D\console_engine.c(73,52): warning C4244: 'fonction' : conversion de 'double' en 'float', perte possible de données
+D:\Documents\Projets\autres\Cube_3D_SDL\visual_studio\3D\console_engine.c(259,28): warning C4018: '<' : incompatibilité signed/unsigned
+D:\Documents\Projets\autres\Cube_3D_SDL\visual_studio\3D\console_engine.c(288,85): warning C4244: 'fonction' : conversion de 'float' en 'uint8_t', perte possible de données
+D:\Documents\Projets\autres\Cube_3D_SDL\visual_studio\3D\console_engine.c(288,88): warning C4244: 'fonction' : conversion de 'float' en 'uint8_t', perte possible de données
+D:\Documents\Projets\autres\Cube_3D_SDL\visual_studio\3D\console_engine.c(288,91): warning C4244: 'fonction' : conversion de 'float' en 'uint8_t', perte possible de données
+D:\Documents\Projets\autres\Cube_3D_SDL\visual_studio\3D\console_engine.c(302,19): warning C4244: '=' : conversion de 'double' en 'int', perte possible de données
+D:\Documents\Projets\autres\Cube_3D_SDL\visual_studio\3D\console_engine.c(303,19): warning C4244: '=' : conversion de 'double' en 'int', perte possible de données
+D:\Documents\Projets\autres\Cube_3D_SDL\visual_studio\3D\console_engine.c(414,41): warning C4244: 'fonction' : conversion de 'float' en 'int', perte possible de données
+D:\Documents\Projets\autres\Cube_3D_SDL\visual_studio\3D\console_engine.c(414,45): warning C4244: 'fonction' : conversion de 'float' en 'int', perte possible de données
+D:\Documents\Projets\autres\Cube_3D_SDL\visual_studio\3D\console_engine.c(411,1): warning C4244: 'initialisation' : conversion de 'double' en 'float', perte possible de données
+D:\Documents\Projets\autres\Cube_3D_SDL\visual_studio\3D\console_engine.c(412,1): warning C4244: 'initialisation' : conversion de 'double' en 'float', perte possible de données
+D:\Documents\Projets\autres\Cube_3D_SDL\visual_studio\3D\console_engine.c(441,20): warning C4244: '=' : conversion de 'float' en 'uint8_t', perte possible de données
+D:\Documents\Projets\autres\Cube_3D_SDL\visual_studio\3D\console_engine.c(442,20): warning C4244: '=' : conversion de 'float' en 'uint8_t', perte possible de données
+D:\Documents\Projets\autres\Cube_3D_SDL\visual_studio\3D\console_engine.c(443,20): warning C4244: '=' : conversion de 'float' en 'uint8_t', perte possible de données
+D:\Documents\Projets\autres\Cube_3D_SDL\visual_studio\3D\console_engine.c(444,20): warning C4244: '=' : conversion de 'float' en 'uint8_t', perte possible de données
+D:\Documents\Projets\autres\Cube_3D_SDL\visual_studio\3D\console_engine.c(511,32): warning C4018: '<' : incompatibilité signed/unsigned
   Génération de code en cours
   28 of 29 functions (96.6%) were compiled, the rest were copied from previous compilation.
     0 functions were new in current compilation
     0 functions had inline decision re-evaluated but remain unchanged
   Fin de la génération du code
-  3D.vcxproj -> C:\Users\Adraster\Desktop\3D_SDL\visual_studio\x64\Release\3D.exe
+  3D.vcxproj -> D:\Documents\Projets\autres\Cube_3D_SDL\visual_studio\x64\Release\3D.exe
